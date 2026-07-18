@@ -112,7 +112,7 @@ _Add screenshots or a GIF here._
 
 ## 🌍 Live Demo
 
-_Add your deployment link here._
+https://the-build-journal.vercel.app/
 
 ---
 
