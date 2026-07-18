@@ -91,7 +91,6 @@ http://localhost:8000
 You can easily personalize the flipbook by:
 
 - Updating the cover page
-- Replacing images with your own content
 - Adding project descriptions or articles
 - Creating a digital portfolio or presentation
 - Styling the pages with custom CSS
@@ -106,13 +105,13 @@ Compatible with modern desktop and mobile browsers that support JavaScript.
 
 ## 📸 Preview
 
-_Add screenshots or a GIF here._
+https://github.com/user-attachments/assets/3831327d-c7f8-40b8-ab72-329a59f5159e
 
 ---
 
 ## 🌍 Live Demo
 
-the-build-journal.vercel.app
+https://the-build-journal.vercel.app
 
 ---
 
