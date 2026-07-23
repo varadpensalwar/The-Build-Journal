@@ -46,50 +46,163 @@
       </div>
 
       <div class="page">
-        <h2>Porsche 911 GT3 RS</h2>
-
-        <p>
-          Built a landing page inspired by the Porsche 911 GT3 RS with a 3D video carousel that rotates automatically,
-          smooth animations, and a responsive design that looks good on desktop, tablet, and mobile screens.
-
-          Used HTML, CSS, and JavaScript to create the carousel animation, responsive layout, and overall user
-          experience. Deployed the project on Vercel.
-        </p>
-      </div>
-
-      <div class="page">
-        <h2>AI Startup Outreach Tracker</h2>
+        <h2>Startup Outreach Tracker</h2>
 
         <p>
           Managing outreach to dozens of AI startups can quickly become difficult, so I built a single place to keep
           everything organized. The application lets users track each company's outreach status, set priorities, search
-          records, and monitor overall progress without juggling spreadsheets.
+          records, and monitor overall progress — without juggling spreadsheets or scattered sticky notes. What started
+          as a simple list quietly grew into a focused workspace: each company has its own row, its own status, its own
+          priority, and its own last-contact date, all editable inline with a single click.
+        </p>
 
-          To make the experience practical, I added automatic data saving with Local Storage so updates persist between
-          sessions, along with CSV export for sharing or maintaining offline records. The project was built using React,
-          TypeScript, Tailwind CSS, and Vite.
+      </div>
+
+      <div class="page">
+        <h2>Startup Outreach Tracker</h2>
+        <p>
+          Every company moves through four statuses — Not
+          Contacted, Contacted, Replied, and Meeting Scheduled — and can be flagged as High, Medium, or Low priority. A
+          live stats bar at the top keeps a running count of where things stand, so the overall health of the outreach
+          is always visible at a glance. Below it, a search field filters by company name in real time, while two
+          dropdowns narrow the list by status and priority. A "Mark Filtered" button lets me clear a whole batch in one
+          move, and a "Reset All Data" option brings everything back to the starting list whenever I want a fresh cycle.
+        </p>
+      </div>
+
+      <div class="page">
+        <h2>Startup Outreach Tracker</h2>
+        <p>
+          I added automatic data saving with Local Storage so updates persist between sessions, along with CSV export
+          for sharing or maintaining offline records. The CSV captures the name, status, priority, contacted flag, and
+          last-contact date for every entry — clean enough to open in Excel, drop into a report, or hand to someone else
+          without explanation. The layout itself is print-friendly and paginated in A4 proportions, which means the
+          entire tracker can be saved as a PDF in one click and carried into a meeting as a real, physical document. The
+          interface is responsive across desktop, tablet, and mobile.
+        </p>
+      </div>
+
+      <div class="page">
+        <h2>Startup Outreach Tracker</h2>
+        <p>
+          The project was built using React, TypeScript, Tailwind CSS, and Vite. React gave me a component model that
+          scales cleanly as features grow, TypeScript kept the company data and status transitions type-safe end to end,
+          Tailwind CSS made the print and screen layouts share a single source of styling truth, and Vite kept the dev
+          server fast enough that iteration felt instant. Together they let a small, focused tool behave like a real
+          product — light to use, but structured underneath.
         </p>
       </div>
 
       <div class="page">
         <h2>Balaji Dresses & Saree Centre</h2>
-
         <p>
-          The project began with a simple idea: a fashion website should feel as refined as the brand it represents.
-          Instead of relying on static sections, I focused on creating a smooth, visually engaging experience where
-          animations and transitions naturally guide users through the content.
+          A fashion brand deserves more than a static website — it deserves a moment. For Balaji Dresses & Saree Centre,
+          a family-run clothing store that has served Biloli, Maharashtra for over twenty-five years from Gandhi Chowk,
+          I wanted every scroll to feel like turning the page of a lookbook, where each section reveals itself with
+          intention rather than loading all at once. The goal was to take a trusted local storefront and give it the
+          same online presence that big fashion houses spend fortunes on — without losing the warmth and identity of the
+          original brand.
+        </p>
+      </div>
 
-          Built the experience using React, Vite, Styled Components, GSAP, Framer Motion, and Locomotive Scroll,
-          combining responsive layouts with scroll-driven animations to deliver a polished interface across devices.
+      <div class="page">
+        <h2>Balaji Dresses & Saree Centre</h2>
+        <p>
+          The experience opens with a fullscreen cover video of a girl walking, layered under a darkened overlay and the
+          brand name appearing word by word in a hand-drawn Kaushan Script. A short loader precedes it — a single white
+          star that draws itself stroke by stroke on a black screen, with the brand name pulsing softly underneath. From
+          the very first frame, the visitor knows this is not a template. A clip-path navigation bar shaped like a
+          downward arrow drops in on demand, and every menu item uses Locomotive Scroll's smooth scrollTo with a custom
+          easing curve, so jumping between sections feels like gliding rather than clicking.
+        </p>
+      </div>
+
+      <div class="page">
+        <h2>Balaji Dresses & Saree Centre</h2>
+        <p>
+          The site features scroll-driven sections with unique interactions. The About section combines a sticky brand
+          history column with two parallax product images to create depth. The New Collection section pins while product
+          cards slide horizontally past a fixed description, changing from grayscale to full colour as they appear. The
+          Marquee section scrolls fashion quotes at different speeds and directions for a dynamic effect. The New
+          Arrivals section pins vertically, displaying four images through a thick white-bordered frame resembling a
+          viewfinder.
+        </p>
+      </div>
+
+      <div class="page">
+        <h2>Balaji Dresses & Saree Centre</h2>
+        <p>
+          To keep the experience smooth and lightweight, the site uses three animation libraries together. GSAP with
+          ScrollTrigger powers the pinned horizontal and vertical scroll effects, while Framer Motion handles component
+          animations such as the grayscale-to-colour product reveal and loader fade. Locomotive Scroll provides smooth
+          scrolling across desktop, tablet, and mobile, synchronising all scroll-based animations into a single
+          timeline. Styled Components keeps styles modular, while a shared dark theme (`#202020` background, white text,
+          Kaushan Script headings, and Sirin Stencil subtitle) ensures a consistent design throughout.
+        </p>
+      </div>
+
+      <div class="page">
+        <h2>Balaji Dresses & Saree Centre</h2>
+        <p>
+          Performance was a core focus throughout the project. Below-the-fold sections are lazy-loaded with React
+          Suspense and mounted during browser idle time using `requestIdleCallback` to improve initial load speed.
+          Images use `loading="lazy"`, `decoding="async"`, and `fetchPriority`, while the hero video loads behind a
+          poster image until it is ready to play. The loader unmounts after its exit animation, ScrollTrigger refreshes
+          when deferred sections load, and the site delivers smooth performance across desktop and mobile. The result is
+          a storefront where motion enhances the products without distracting from them.
+        </p>
+      </div>
+
+      <div class="page">
+        <h2>Porsche 911 GT3 RS</h2>
+        <p>
+          Some projects begin with a problem; this one began with a car. Inspired by the Porsche 911 GT3 RS, I wanted to
+          capture its precision and engineering through web design. The page starts with the "Porsche" title in ICA
+          Rubrik, followed by "911" and "GT3 RS" in outlined Poppins, styled like a specification plate. These elements
+          sit over a full-bleed GT3 RS image with a bottom-up black gradient, allowing the typography to stand out while
+          maintaining focus on the car.
+        </p>
+      </div>
+
+      <div class="page">
+        <h2>Porsche 911 GT3 RS</h2>
+        <p>
+          The main attraction is a 3D carousel of ten looping GT3 RS videos built entirely with CSS transforms. Each
+          panel is positioned in a circular ring using rotateY and translateZ, tilted with perspective for a cinematic
+          effect. The carousel rotates automatically at a slow speed, creating a showroom-like presentation. Users can
+          drag with a mouse or swipe on touch devices for precise manual control, after which the automatic rotation
+          resumes smoothly.
+        </p>
+      </div>
+
+      <div class="page">
+        <h2>Porsche 911 GT3 RS</h2>
+        <p>
+          To ensure a consistent experience, the design uses separate layouts for desktop, tablet, and mobile. Desktop
+          features large carousel cards, a deep 3D radius, and a full-width background image. Tablet reduces card size
+          and depth, while mobile switches to a vertical background, smaller carousel, 100dvh height, and stacked
+          typography. Every spacing, border radius, gradient, and font value was individually adjusted so the layout
+          feels native on every screen size.
+        </p>
+      </div>
+
+      <div class="page">
+        <h2>Porsche 911 GT3 RS</h2>
+        <p>
+          Behind the interface, the project functions as a Progressive Web App. A service worker caches the site's
+          assets for fast offline loading, while the Web App Manifest enables installation with standalone mode,
+          maskable icons, a black theme, and portrait orientation. A floating Play/Pause button controls background
+          audio through the HTML Audio API, and subtle grid lines with a semi-transparent background texture add depth.
+          Together, these details make the experience feel closer to an interactive showroom than a traditional website.
         </p>
       </div>
 
       <div class="page end">
 
-        <h2>Thank You</h2>
+        <h2>Thanks for reading.</h2>
 
         <p>
-          Thanks for reading.
+          Written by Varad Pensalwar
         </p>
 
 
@@ -98,16 +211,6 @@
     </div>
 
   </main>
-
-  <div class="controls">
-
-    <button id="prev">
-    </button>
-
-    <button id="next">
-    </button>
-
-  </div>
 
   <script src="app.js"></script>
 
